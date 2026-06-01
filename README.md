@@ -125,6 +125,7 @@ A production-grade **Medical Domain B2B ERP** for hospitals, distributors, and a
 ## Development
 
 ```bash
+apt-get update && apt-get install -y libatomic1
 cd frontend && npm install && npm run dev
 npm run lint && npm run build    # frontend/.eslintrc.cjs
 
