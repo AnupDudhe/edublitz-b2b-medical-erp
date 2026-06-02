@@ -5,3 +5,6 @@ metadata:
   labels:
     app.kubernetes.io/name: med-erp
     environment: production
+
+
+#helm install nginx-ingress . -n med-erp
