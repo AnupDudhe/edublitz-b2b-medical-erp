@@ -26,9 +26,9 @@ spec:
                 name: product-service
                 port:
                   number: 8082
-         -  path: /
-              pathType: Prefix
-              backend:
+         -  path: /order
+            pathType: Prefix
+            backend:
                 service: 
                   name: order-service
                   port:
