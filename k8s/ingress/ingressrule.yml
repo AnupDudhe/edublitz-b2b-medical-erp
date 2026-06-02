@@ -12,21 +12,21 @@ spec:
     http:
       paths:
         
-         -  path: /
+         -  path: /api/v1/users
             pathType: Prefix
             backend:
               service: 
                 name: user-service
                 port:
                   number: 8081
-         -  path: /product
+         -  path: /api/v1/products
             pathType: Prefix
             backend:
               service: 
                 name: product-service
                 port:
                   number: 8082
-         -  path: /order
+         -  path: /api/v1/orders
             pathType: Prefix
             backend:
                 service: 
