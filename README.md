@@ -146,3 +146,6 @@ cd user-service && mvn clean package -DskipTests
 
 Proprietary — **Edublitz — Powered by Greamio Technologies Pvt Ltd.**  
 See [LICENSE](LICENSE). All rights reserved.
+
+admin@medicalerp.com
+Admin@123456
