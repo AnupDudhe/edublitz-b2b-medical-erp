@@ -125,6 +125,11 @@ A production-grade **Medical Domain B2B ERP** for hospitals, distributors, and a
 ## Development
 
 ```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.5/install.sh | bash
+source ~/.bashrc
+nvm install node
+node -v
+npm -v
 apt-get update && apt-get install -y libatomic1
 cd frontend && npm install && npm run dev
 npm run lint && npm run build    # frontend/.eslintrc.cjs
