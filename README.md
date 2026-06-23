@@ -136,6 +136,8 @@ npm run lint && npm run build    # frontend/.eslintrc.cjs
 
 export JAVA_HOME=$(/usr/libexec/java_home -v 17 2>/dev/null)   # macOS
 cd user-service && mvn clean package -DskipTests
+
+ aws s3 cp  dist/  s3://mederp --recursive
 ```
 
 `*/target/` and `frontend/dist/` are gitignored. Clean with `mvn clean` and delete `frontend/dist` if needed.
