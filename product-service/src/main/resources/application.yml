@@ -8,7 +8,8 @@ spring:
     name: product-service
   data:
     mongodb:
-      uri: ${MONGODB_URI:mongodb+srv://cbz:redhat@edublitz.laegfsa.mongodb.net/products_db?appName=edublitz}
+      uri: ${MONGODB_URI:mongodb+srv://mongodbuser:Redhat123@mederpdb.ejiyp4y.mongodb.net/products_db?appName=edublitz}
+          #mongodb+srv://mongodbuser:Redhat123@mederpdb.ejiyp4y.mongodb.net/products_db?retryWrites=true&w=majority
       database: products_db
   jackson:
     default-property-inclusion: non_null
