@@ -220,6 +220,16 @@ kubectl create secret generic app-secrets \
   --dry-run=client -o yaml | kubectl apply -f -
 ```
 
+```
+kubectl create secret generic app-secrets \
+  -n med-erp \
+  --from-literal=MONGODB_URI_USER="mongodb+srv://mongodbuser:@edublitz.b0yws4a.mongodb.net/users_db?retryWrites=true&w=majority" \
+  --from-literal=MONGODB_URI_PRODUCT="mongodb+srv://mongodbuser:@edublitz.b0yws4a.mongodb.net/products_db?retryWrites=true&w=majority" \
+  --from-literal=MONGODB_URI_ORDER="mongodb+srv://mongodbuser:@edublitz.b0yws4a.mongodb.net/orders_db?retryWrites=true&w=majority" \
+  --from-literal=JWT_SECRET="your-256-bit-hex-secret" \
+  --dry-run=client -o yaml | kubectl apply -f -
+```
+
 (Optional) If you use `k8s/secrets/app-secrets.yaml`, apply it **only after** `k8s/namespace/` and replace placeholder values — prefer `kubectl create secret` above for production.
 
 ---
