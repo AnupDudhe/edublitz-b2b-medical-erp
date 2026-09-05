@@ -223,10 +223,10 @@ kubectl create secret generic app-secrets \
 ```
 kubectl create secret generic app-secrets \
   -n med-erp \
-  --from-literal=MONGODB_URI_USER="mongodb+srv://mongodbuser:@edublitz.b0yws4a.mongodb.net/users_db?retryWrites=true&w=majority" \
-  --from-literal=MONGODB_URI_PRODUCT="mongodb+srv://mongodbuser:@edublitz.b0yws4a.mongodb.net/products_db?retryWrites=true&w=majority" \
-  --from-literal=MONGODB_URI_ORDER="mongodb+srv://mongodbuser:@edublitz.b0yws4a.mongodb.net/orders_db?retryWrites=true&w=majority" \
-  --from-literal=JWT_SECRET="your-256-bit-hex-secret" \
+  --from-literal=MONGODB_URI_USER="mongodb+srv://mongodbuser:Redhat123@edublitz.b0yws4a.mongodb.net/users_db?retryWrites=true&w=majority" \
+  --from-literal=MONGODB_URI_PRODUCT="mongodb+srv://mongodbuser:Redhat123@edublitz.b0yws4a.mongodb.net/products_db?retryWrites=true&w=majority" \
+  --from-literal=MONGODB_URI_ORDER="mongodb+srv://mongodbuser:Redhat123@edublitz.b0yws4a.mongodb.net/orders_db?retryWrites=true&w=majority" \
+  --from-literal=JWT_SECRET="c3VwZXJzZWNyZXRrZXlmb3Jqd3RhdXRoZW50aWNhdGlvbg==" \
   --dry-run=client -o yaml | kubectl apply -f -
 ```
 
