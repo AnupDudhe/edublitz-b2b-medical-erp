@@ -30,7 +30,7 @@ spec:
       terminationGracePeriodSeconds: 60
       containers:
         - name: order-service
-          image: 836739852243.dkr.ecr.us-east-1.amazonaws.com/orders/orders:latest
+          image: 707333744480.dkr.ecr.us-east-2.amazonaws.com/cbz/order:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8083
